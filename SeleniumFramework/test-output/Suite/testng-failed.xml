@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="SeleniumAutomation.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Error Validation(failed)">
+    <classes>
+      <class name="SeleniumAutomation.Test.ErrorValidation">
+        <methods>
+          <include name="closeApp"/>
+          <include name="errorVal"/>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- SeleniumAutomation.Test.ErrorValidation -->
+    </classes>
+  </test> <!-- Error Validation(failed) -->
+  <test thread-count="5" parallel="tests" name="E2E Testing(failed)">
+    <classes>
+      <class name="SeleniumAutomation.Test.StandAloneTest">
+        <methods>
+          <include name="orderProduct"/>
+          <include name="closeApp"/>
+          <include name="checkOrdersList"/>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- SeleniumAutomation.Test.StandAloneTest -->
+    </classes>
+  </test> <!-- E2E Testing(failed) -->
+</suite> <!-- Failed suite [Suite] -->

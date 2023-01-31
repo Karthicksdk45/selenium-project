@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Loans(failed)">
+    <parameter name="call" value="Hi im executing as global parameter"/>
+    <classes>
+      <class name="FrameWork.NewLoan">
+        <methods>
+          <include name="After"/>
+          <include name="mobilelogin"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- FrameWork.NewLoan -->
+    </classes>
+  </test> <!-- Loans(failed) -->
+</suite> <!-- Failed suite [Suite] -->

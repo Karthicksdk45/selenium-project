@@ -1,0 +1,26 @@
+import java.time.Duration;
+import java.util.HashSet;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Google {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().window().maximize();
+		driver.get("https://www.google.com/");
+		//driver.findElement(By.xpath("//*[@title='Search']")).sendKeys("google");	
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		//js.executeScript("document.querySelector(\"input[title='Search']\").value='sdk45'");
+		WebElement ele = (WebElement)js.executeScript("document.querySelector(\"input[title='Search'\")");
+		System.out.println(ele.getText());
+		ele.sendKeys("abcd452");
+	}
+}

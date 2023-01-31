@@ -1,0 +1,31 @@
+import java.io.File;
+import java.io.IOException;
+import java.time.Duration;
+import java.util.HashSet;
+import java.util.Set;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Google {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().window().maximize();
+		driver.get("https://www.google.com/");
+		WebElement sea = driver.findElement(By.xpath("//*[@title='Search']"));	
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		//js.executeScript("document.querySelector(\"input[title='Search']\").value='sdk45'");
+		//WebElement ele = (WebElement)js.executeScript("document.querySelector(\"input[title='Search'\")");
+		//System.out.println(ele.getText());
+		File src = sea.getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(src, new File(System.getProperty("user.dir")+"\\target\\screensh.png"));
+	}
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-06T02:03:39Z" name="Suite" finished-at="2023-01-06T02:03:59Z" duration-ms="19292">
+    <groups>
+      <group name="purchase">
+        <method signature="StandAloneTest.orderProduct(java.util.HashMap)[pri:0, instance:SeleniumAutomation.Test.StandAloneTest@6cc558c6]" name="orderProduct" class="SeleniumAutomation.Test.StandAloneTest"/>
+      </group> <!-- purchase -->
+    </groups>
+    <test started-at="2023-01-06T02:03:39Z" name="Error Validation" finished-at="2023-01-06T02:03:39Z" duration-ms="10">
+    </test> <!-- Error Validation -->
+    <test started-at="2023-01-06T02:03:39Z" name="E2E Testing" finished-at="2023-01-06T02:03:59Z" duration-ms="19292">
+      <class name="SeleniumAutomation.Test.StandAloneTest">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:SeleniumAutomation.Test.StandAloneTest@6cc558c6]" started-at="2023-01-06T02:03:39Z" name="launchApp" finished-at="2023-01-06T02:03:45Z" duration-ms="5828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="orderProduct(java.util.HashMap)[pri:0, instance:SeleniumAutomation.Test.StandAloneTest@6cc558c6]" started-at="2023-01-06T02:03:45Z" name="orderProduct" data-provider="inputData" finished-at="2023-01-06T02:03:51Z" duration-ms="5233" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Karthick@45, product=ADIDAS ORIGINAL, email=Karthicksdk45@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderProduct -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:SeleniumAutomation.Test.StandAloneTest@6cc558c6]" started-at="2023-01-06T02:03:51Z" name="closeApp" finished-at="2023-01-06T02:03:51Z" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:SeleniumAutomation.Test.StandAloneTest@6cc558c6]" started-at="2023-01-06T02:03:51Z" name="launchApp" finished-at="2023-01-06T02:03:55Z" duration-ms="4050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="orderProduct(java.util.HashMap)[pri:0, instance:SeleniumAutomation.Test.StandAloneTest@6cc558c6]" started-at="2023-01-06T02:03:55Z" name="orderProduct" data-provider="inputData" finished-at="2023-01-06T02:03:59Z" duration-ms="3885" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Iamking@000, product=IPHONE 13 PRO, email=anshika@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderProduct -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:SeleniumAutomation.Test.StandAloneTest@6cc558c6]" started-at="2023-01-06T02:03:59Z" name="closeApp" finished-at="2023-01-06T02:03:59Z" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- SeleniumAutomation.Test.StandAloneTest -->
+    </test> <!-- E2E Testing -->
+  </suite> <!-- Suite -->
+</testng-results>

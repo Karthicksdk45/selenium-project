@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-10T11:34:09 IST" name="Default suite" finished-at="2023-01-10T11:34:16 IST" duration-ms="6972">
+    <groups>
+    </groups>
+    <test started-at="2023-01-10T11:34:09 IST" name="Default test" finished-at="2023-01-10T11:34:16 IST" duration-ms="6972">
+      <class name="SeleniumAutomation.ExtentReports.ExtentPractise">
+        <test-method is-config="true" signature="extentReport()[pri:0, instance:SeleniumAutomation.ExtentReports.ExtentPractise@49139829]" started-at="2023-01-10T11:34:09 IST" name="extentReport" finished-at="2023-01-10T11:34:09 IST" duration-ms="411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentReport -->
+        <test-method signature="reports()[pri:0, instance:SeleniumAutomation.ExtentReports.ExtentPractise@49139829]" started-at="2023-01-10T11:34:09 IST" name="reports" finished-at="2023-01-10T11:34:16 IST" duration-ms="6459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reports -->
+      </class> <!-- SeleniumAutomation.ExtentReports.ExtentPractise -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
